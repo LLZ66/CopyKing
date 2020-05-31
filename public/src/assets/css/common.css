@@ -1,0 +1,69 @@
+@import url(font.css);
+@import url(grid.css);
+body {
+  font-family: 'PingFangSC-Regular', 'helvetica neue', tahoma, 'PingFang SC', 'microsoft yahei', arial, 'hiragino sans gb', sans-serif;
+}
+@media screen and (max-width:768px) {
+  :root {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width:768px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width:992px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width:1200px) {
+  :root {
+    font-size: 16px;
+  }
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+}
+@keyframes fade {
+  from {
+    transform: translate(0,5%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
+@keyframes minportLight {
+  0% {
+    clip-path: ellipse(20px 20px at 0%  50%);
+  }
+  50% {
+    clip-path: ellipse(20px 20px at 100%  50%);
+  }
+  100% {
+    clip-path: ellipse(20px 20px at 0%  50%);
+  }
+}
+@keyframes midportLight {
+  0% {
+    clip-path: ellipse(40px 40px at 0%  50%);
+  }
+  50% {
+    clip-path: ellipse(40px 40px at 100%  50%);
+  }
+  100% {
+    clip-path: ellipse(40px 40px at 0%  50%);
+  }
+}
+
+.noselect {
+  user-select: none;
+}
+html,body {
+  width: 100%;
+  height: 100%;
+}
